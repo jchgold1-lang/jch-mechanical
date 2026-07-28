@@ -494,7 +494,6 @@
 
 
 <!-- ANIMATION SCRIPT -->
-<script>
 
     const revealElements =
         document.querySelectorAll('.reveal');
@@ -533,7 +532,102 @@
         revealObserver.observe(element);
 
     });
+    const serviceForm =
+        document.getElementById("serviceForm");
 
+    const formSuccess =
+        document.getElementById("form-success");
+
+    const formError =
+        document.getElementById("form-error");
+
+
+    serviceForm.addEventListener(
+        "submit",
+        async function(event) {
+
+            event.preventDefault();
+
+
+            const submitButton =
+                serviceForm.querySelector(
+                    ".form-submit"
+                );
+
+
+            submitButton.disabled = true;
+
+            submitButton.textContent =
+                "Sending Request...";
+
+
+            formSuccess.classList.remove(
+                "show"
+            );
+
+            formError.classList.remove(
+                "show"
+            );
+
+
+            const formData =
+                new FormData(serviceForm);
+
+
+            try {
+
+                const response =
+                    await fetch(
+                        serviceForm.action,
+                        {
+                            method: "POST",
+
+                            body: formData,
+
+                            headers: {
+                                "Accept":
+                                    "application/json"
+                            }
+                        }
+                    );
+
+
+                if (response.ok) {
+
+                    serviceForm.reset();
+
+                    submitButton.style.display =
+                        "none";
+
+                    formSuccess.classList.add(
+                        "show"
+                    );
+
+                } else {
+
+                    throw new Error(
+                        "Form submission failed"
+                    );
+
+                }
+
+
+            } catch (error) {
+
+                formError.classList.add(
+                    "show"
+                );
+
+                submitButton.disabled =
+                    false;
+
+                submitButton.textContent =
+                    "Request Service";
+
+            }
+
+        }
+    );
 </script>
 ```
 
