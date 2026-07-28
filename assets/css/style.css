@@ -223,4 +223,101 @@ width:90%;
 }
 
 
+}/* Navigation */
+
+.navbar {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+
+    background:#05080c;
+
+    border-bottom:1px solid #22303d;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+.nav-logo img {
+
+    width:120px;
+
+}
+
+
+.nav-links {
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+
+.nav-links a {
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.nav-links a:hover {
+
+    color:#2da9ff;
+
+}
+
+
+.nav-call {
+
+    background:#e53935;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+@media(max-width:800px){
+
+.navbar {
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+.nav-links {
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
 }
