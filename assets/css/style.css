@@ -2938,3 +2938,886 @@ SERVICES PAGE REDUCED MOTION
 ```
 
 }
+/* =========================================================
+ABOUT PAGE - HERO
+========================================================= */
+
+.about-hero {
+
+```
+min-height: 600px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+text-align: center;
+
+padding: 80px 20px;
+
+position: relative;
+
+overflow: hidden;
+
+background:
+
+    radial-gradient(
+        circle at 50% 25%,
+        rgba(45, 169, 255, 0.16),
+        transparent 40%
+    ),
+
+    linear-gradient(
+        135deg,
+        #002d52,
+        #080b10
+    );
+```
+
+}
+
+.about-hero::before {
+
+```
+content: "";
+
+position: absolute;
+
+width: 500px;
+
+height: 500px;
+
+border-radius: 50%;
+
+background:
+    rgba(45, 169, 255, 0.08);
+
+filter:
+    blur(90px);
+
+animation:
+    aboutHeroGlow 8s ease-in-out infinite;
+```
+
+}
+
+@keyframes aboutHeroGlow {
+
+```
+0%,
+100% {
+
+    transform:
+        translate(-100px, -30px);
+
+}
+
+50% {
+
+    transform:
+        translate(100px, 40px);
+
+}
+```
+
+}
+
+.about-hero-content {
+
+```
+position: relative;
+
+z-index: 2;
+
+max-width: 850px;
+```
+
+}
+
+.about-logo {
+
+```
+width: 240px;
+
+margin-bottom: 25px;
+
+animation:
+    logoFloat 4s ease-in-out infinite;
+```
+
+}
+
+.about-hero h1 {
+
+```
+font-size: 52px;
+
+line-height: 1.15;
+
+margin-bottom: 20px;
+```
+
+}
+
+.about-hero h1 span {
+
+```
+display: block;
+
+color:
+    #2da9ff;
+```
+
+}
+
+.about-hero p {
+
+```
+max-width: 700px;
+
+margin: 0 auto;
+
+color:
+    #d9e5ef;
+
+font-size:
+    19px;
+```
+
+}
+
+/* =========================================================
+ABOUT STORY
+========================================================= */
+
+.about-story {
+
+```
+max-width:
+    1100px;
+
+margin:
+    0 auto;
+
+padding:
+    110px 20px;
+```
+
+}
+
+.about-story-grid {
+
+```
+display:
+    grid;
+
+grid-template-columns:
+    0.8fr 1.2fr;
+
+gap:
+    70px;
+
+align-items:
+    start;
+```
+
+}
+
+.about-story-heading {
+
+```
+position:
+    sticky;
+
+top:
+    120px;
+```
+
+}
+
+.about-story-heading h2 {
+
+```
+text-align:
+    left;
+
+font-size:
+    40px;
+
+line-height:
+    1.2;
+```
+
+}
+
+.about-story-content {
+
+```
+padding:
+    35px;
+
+background:
+    linear-gradient(
+        145deg,
+        #151c24,
+        #0c1015
+    );
+
+border:
+    1px solid #263746;
+
+border-radius:
+    20px;
+
+box-shadow:
+    0 20px 50px
+    rgba(0, 0, 0, 0.2);
+```
+
+}
+
+.about-story-content p {
+
+```
+color:
+    #c7c7c7;
+
+font-size:
+    17px;
+
+line-height:
+    1.85;
+
+margin-bottom:
+    22px;
+```
+
+}
+
+.about-story-content p:last-child {
+
+```
+margin-bottom:
+    0;
+```
+
+}
+
+.about-story-content strong {
+
+```
+color:
+    #ffffff;
+```
+
+}
+
+/* =========================================================
+STORY HIGHLIGHT
+========================================================= */
+
+.story-highlight {
+
+```
+display:
+    flex;
+
+flex-direction:
+    column;
+
+gap:
+    5px;
+
+margin-top:
+    30px;
+
+padding:
+    25px;
+
+border-left:
+    3px solid #2da9ff;
+
+background:
+    rgba(45, 169, 255, 0.06);
+```
+
+}
+
+.story-highlight strong {
+
+```
+color:
+    #2da9ff;
+
+font-size:
+    42px;
+
+line-height:
+    1;
+```
+
+}
+
+.story-highlight span {
+
+```
+color:
+    #c7d8e5;
+
+font-size:
+    15px;
+```
+
+}
+
+/* =========================================================
+ABOUT CREDENTIALS
+========================================================= */
+
+.about-credentials {
+
+```
+max-width:
+    none;
+
+padding:
+    100px 20px;
+
+background:
+    linear-gradient(
+        135deg,
+        #06111b,
+        #002d52
+    );
+```
+
+}
+
+.about-credentials > * {
+
+```
+max-width:
+    1100px;
+
+margin-left:
+    auto;
+
+margin-right:
+    auto;
+```
+
+}
+
+.credentials-grid {
+
+```
+display:
+    grid;
+
+grid-template-columns:
+    repeat(3, 1fr);
+
+gap:
+    25px;
+```
+
+}
+
+.about-credential-card {
+
+```
+padding:
+    40px 30px;
+
+text-align:
+    center;
+
+background:
+    rgba(5, 8, 12, 0.45);
+
+border:
+    1px solid
+    rgba(45, 169, 255, 0.25);
+
+border-radius:
+    18px;
+
+transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+```
+
+}
+
+.about-credential-card:hover {
+
+```
+transform:
+    translateY(-10px);
+
+border-color:
+    #2da9ff;
+
+box-shadow:
+    0 15px 35px
+    rgba(45, 169, 255, 0.2);
+```
+
+}
+
+.about-credential-icon {
+
+```
+display:
+    flex;
+
+align-items:
+    center;
+
+justify-content:
+    center;
+
+width:
+    80px;
+
+height:
+    80px;
+
+margin:
+    0 auto 25px;
+
+border-radius:
+    50%;
+
+background:
+    rgba(45, 169, 255, 0.12);
+
+border:
+    1px solid
+    rgba(45, 169, 255, 0.4);
+
+color:
+    #2da9ff;
+
+font-size:
+    20px;
+
+font-weight:
+    bold;
+```
+
+}
+
+.about-credential-card h3 {
+
+```
+color:
+    #ffffff;
+
+font-size:
+    22px;
+
+margin-bottom:
+    12px;
+```
+
+}
+
+.about-credential-card p {
+
+```
+color:
+    #c7c7c7;
+
+line-height:
+    1.7;
+```
+
+}
+
+/* =========================================================
+ABOUT VALUES
+========================================================= */
+
+.about-values {
+
+```
+max-width:
+    1100px;
+
+margin:
+    0 auto;
+
+padding:
+    100px 20px;
+```
+
+}
+
+/* =========================================================
+SERVICE AREA
+========================================================= */
+
+.about-service-area {
+
+```
+max-width:
+    none;
+
+padding:
+    100px 20px;
+
+background:
+    linear-gradient(
+        180deg,
+        #080b10,
+        #0c1219,
+        #080b10
+    );
+```
+
+}
+
+.service-area-content {
+
+```
+max-width:
+    900px;
+
+margin:
+    0 auto;
+
+text-align:
+    center;
+```
+
+}
+
+.service-area-content h2 {
+
+```
+font-size:
+    40px;
+```
+
+}
+
+.service-area-content > p {
+
+```
+max-width:
+    700px;
+
+margin:
+    0 auto 35px;
+
+color:
+    #c7c7c7;
+
+font-size:
+    18px;
+
+line-height:
+    1.7;
+```
+
+}
+
+.service-area-list {
+
+```
+display:
+    flex;
+
+justify-content:
+    center;
+
+flex-wrap:
+    wrap;
+
+gap:
+    12px;
+```
+
+}
+
+.service-area-list span {
+
+```
+padding:
+    10px 18px;
+
+border:
+    1px solid #263746;
+
+border-radius:
+    30px;
+
+background:
+    #151c24;
+
+color:
+    #d9e5ef;
+
+font-size:
+    14px;
+
+transition:
+    0.3s ease;
+```
+
+}
+
+.service-area-list span:hover {
+
+```
+border-color:
+    #2da9ff;
+
+color:
+    #2da9ff;
+
+transform:
+    translateY(-3px);
+```
+
+}
+
+/* =========================================================
+ABOUT CTA
+========================================================= */
+
+.about-cta {
+
+```
+max-width:
+    1100px;
+
+margin:
+    0 auto;
+
+padding:
+    80px 20px 100px;
+```
+
+}
+
+.about-cta .contact {
+
+```
+margin:
+    0;
+```
+
+}
+
+/* =========================================================
+ABOUT PAGE RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+```
+.about-story-grid {
+
+    grid-template-columns:
+        1fr;
+
+    gap:
+        40px;
+
+}
+
+
+.about-story-heading {
+
+    position:
+        static;
+
+    text-align:
+        center;
+
+}
+
+
+.about-story-heading h2 {
+
+    text-align:
+        center;
+
+}
+
+
+.credentials-grid {
+
+    grid-template-columns:
+        1fr;
+
+    max-width:
+        600px;
+
+    margin:
+        0 auto;
+
+}
+
+
+.about-hero h1 {
+
+    font-size:
+        44px;
+
+}
+```
+
+}
+
+@media (max-width: 600px) {
+
+```
+.about-hero {
+
+    min-height:
+        550px;
+
+    padding:
+        70px 20px;
+
+}
+
+
+.about-logo {
+
+    width:
+        210px;
+
+}
+
+
+.about-hero h1 {
+
+    font-size:
+        34px;
+
+}
+
+
+.about-hero p {
+
+    font-size:
+        17px;
+
+}
+
+
+.about-story {
+
+    padding:
+        70px 20px;
+
+}
+
+
+.about-story-heading h2 {
+
+    font-size:
+        32px;
+
+}
+
+
+.about-story-content {
+
+    padding:
+        25px;
+
+}
+
+
+.about-story-content p {
+
+    font-size:
+        16px;
+
+}
+
+
+.story-highlight strong {
+
+    font-size:
+        36px;
+
+}
+
+
+.about-credentials,
+.about-values,
+.about-service-area {
+
+    padding:
+        70px 20px;
+
+}
+
+
+.service-area-content h2 {
+
+    font-size:
+        32px;
+
+}
+
+
+.service-area-list {
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+}
+
+
+.service-area-list span {
+
+    width:
+        100%;
+
+    max-width:
+        300px;
+
+}
+```
+
+}
+
+/* =========================================================
+ABOUT PAGE REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+```
+.about-hero::before,
+.about-logo {
+
+    animation:
+        none;
+
+}
+
+
+.about-credential-card,
+.service-area-list span {
+
+    transition:
+        none;
+
+}
+```
+
+}
