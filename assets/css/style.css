@@ -419,3 +419,37 @@ width:90%;
 }
 
 }
+/* Floating Mobile Call Button */
+
+.mobile-call {
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:#e53935;
+
+color:white;
+
+padding:15px 25px;
+
+border-radius:50px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+box-shadow:0 5px 20px rgba(0,0,0,.5);
+
+z-index:2000;
+
+}
+
+
+.mobile-call:hover {
+
+background:#ff5252;
+
+}
