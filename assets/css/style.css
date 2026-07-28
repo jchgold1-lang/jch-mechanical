@@ -1,1 +1,226 @@
+/* JCH Mechanical Professional HVAC Website */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080b10;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,45,82,.95),
+        rgba(8,11,16,.95)
+    );
+
+    padding: 40px 20px 70px;
+    text-align: center;
+}
+
+.logo {
+    width: 260px;
+    max-width: 90%;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,.6));
+}
+
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+
+header p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 20px;
+    color: #d9e5ef;
+}
+
+
+.button {
+    display: inline-block;
+    margin: 25px 8px;
+    padding: 16px 35px;
+
+    background: #e53935;
+    color:white;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+
+.button:hover {
+
+    background:#ff5252;
+
+    transform:translateY(-4px);
+
+}
+
+
+section {
+
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+
+}
+
+
+h2 {
+
+    text-align:center;
+
+    color:#2da9ff;
+
+    font-size:36px;
+
+    margin-bottom:45px;
+
+}
+
+
+.services {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+
+.card {
+
+    background:
+    linear-gradient(
+        145deg,
+        #151c24,
+        #0c1015
+    );
+
+    padding:30px;
+
+    border-radius:15px;
+
+    border:1px solid #263746;
+
+    transition:.3s;
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-10px);
+
+    border-color:#2da9ff;
+
+    box-shadow:
+    0 10px 30px rgba(45,169,255,.2);
+
+}
+
+
+.card h3 {
+
+    color:white;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+
+.card p {
+
+    color:#c7c7c7;
+
+}
+
+
+
+.contact {
+
+    background:
+    linear-gradient(
+        135deg,
+        #002d52,
+        #06111b
+    );
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+
+.phone {
+
+    color:#ff5252;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+
+footer {
+
+    background:#050607;
+
+    color:#999;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+/* Mobile adjustments */
+
+@media(max-width:700px){
+
+header h1 {
+
+font-size:32px;
+
+}
+
+
+header p {
+
+font-size:17px;
+
+}
+
+
+.button {
+
+width:90%;
+
+}
+
+
+}
