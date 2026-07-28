@@ -1,819 +1,458 @@
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>JCH Mechanical | HVAC Repair & Installation</title>
-    
-<link rel="stylesheet" href="assets/css/style.css">
-    
-<style>
+/* JCH Mechanical Professional HVAC Website */
 
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background:#0b0d10;
-    color:white;
+    background: #080b10;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
 header {
-    background:linear-gradient(135deg,#111820,#002d52);
-    padding:30px 20px;
-    text-align:center;
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,45,82,.95),
+        rgba(8,11,16,.95)
+    );
+
+    padding: 40px 20px 70px;
+    text-align: center;
 }
 
 .logo {
-    width:250px;
-    max-width:90%;
-    margin-bottom:25px;
-    filter: drop-shadow(0 5px 10px rgba(0,0,0,.5));
+    width: 260px;
+    max-width: 90%;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,.6));
 }
-}
+
 
 header h1 {
-    font-size:42px;
-    color:#ffffff;
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
-header span {
-    color:#2da9ff;
-}
 
 header p {
-    font-size:20px;
-    margin:15px auto;
-    max-width:700px;
+    max-width: 750px;
+    margin: auto;
+    font-size: 20px;
+    color: #d9e5ef;
 }
+
 
 .button {
-    display:inline-block;
-    background:#e53935;
+    display: inline-block;
+    margin: 25px 8px;
+    padding: 16px 35px;
+
+    background: #e53935;
     color:white;
-    padding:15px 30px;
-    margin:15px;
-    border-radius:8px;
+
     text-decoration:none;
     font-weight:bold;
-}
 
-.button:hover {
-    background:#ff5252;
-}
+    border-radius:50px;
 
-section {
-    padding:60px 20px;
-    max-width:1100px;
-    margin:auto;
-}
-
-h2 {
-    text-align:center;
-    color:#2da9ff;
-    font-size:32px;
-    margin-bottom:35px;
-}
-
-.services {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card {
-    background:#151a20;
-    padding:30px;
-    border-radius:12px;
-    border:1px solid #263238;
     transition:.3s;
 }
 
-.card:hover {
-    transform:translateY(-8px);
-    border-color:#2da9ff;
+
+.button:hover {
+
+    background:#ff5252;
+
+    transform:translateY(-4px);
+
 }
+
+
+section {
+
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+
+}
+
+
+h2 {
+
+    text-align:center;
+
+    color:#2da9ff;
+
+    font-size:36px;
+
+    margin-bottom:45px;
+
+}
+
+
+.services {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+
+.card {
+
+    background:
+    linear-gradient(
+        145deg,
+        #151c24,
+        #0c1015
+    );
+
+    padding:30px;
+
+    border-radius:15px;
+
+    border:1px solid #263746;
+
+    transition:.3s;
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-10px);
+
+    border-color:#2da9ff;
+
+    box-shadow:
+    0 10px 30px rgba(45,169,255,.2);
+
+}
+
 
 .card h3 {
-    color:#ffffff;
+
+    color:white;
+
     margin-bottom:15px;
+
+    font-size:22px;
+
 }
+
 
 .card p {
-    color:#cccccc;
+
+    color:#c7c7c7;
+
 }
+
+
 
 .contact {
-    background:#002d52;
+
+    background:
+    linear-gradient(
+        135deg,
+        #002d52,
+        #06111b
+    );
+
+    border-radius:20px;
+
     text-align:center;
-    border-radius:15px;
+
 }
 
-footer {
-    background:#050608;
-    text-align:center;
-    padding:25px;
-    color:#aaa;
-}
 
 .phone {
-    font-size:28px;
+
     color:#ff5252;
+
+    font-size:34px;
+
     font-weight:bold;
+
 }
 
-</style>
 
-</head>
+footer {
 
+    background:#050607;
 
-<body>
-<nav class="navbar">
+    color:#999;
 
-    <div class="nav-logo">
-        <img src="./logo.png" alt="JCH Mechanical">
-    </div>
+    text-align:center;
 
-    <div class="nav-links">
+    padding:30px;
 
-        <a href="index.html">Home</a>
+}
 
-        <a href="services.html">Services</a>
 
-        <a href="about.html">About</a>
+/* Mobile adjustments */
 
-        <a href="contact.html">Contact</a>
+@media(max-width:700px){
 
-    </div>
+header h1 {
 
-    <a class="nav-call" href="tel:2142502840">
-        Call Now
-    </a>
+font-size:32px;
 
-</nav>
+}
 
-<header class="hero">
 
+header p {
 
-<img src="./logo.png" alt="JCH Mechanical Logo" class="logo">
+font-size:17px;
 
+}
 
-<h1>
-Reliable HVAC Service For DFW Homes
-</h1>
 
+.button {
 
-<p>
-Professional repairs, maintenance, and complete HVAC system replacements from a licensed HVAC technician.
-</p>
+width:90%;
 
+}
 
-<div>
 
-<a class="button" href="tel:2142502840">
-Call Now
-</a>
+}/* Navigation */
 
+.navbar {
 
-<a class="button" href="contact.html">
-Request Service
-</a>
+    display:flex;
 
+    justify-content:space-between;
 
-</div>
+    align-items:center;
 
+    padding:15px 40px;
 
-<div class="hero-stats">
+    background:#05080c;
 
+    border-bottom:1px solid #22303d;
 
-<div>
-<h3>
-3,500+
-</h3>
+    position:sticky;
 
-<p>
-Homes Served
-</p>
+    top:0;
 
-</div>
+    z-index:1000;
 
+}
 
 
-<div>
+.nav-logo img {
 
-<h3>
-TDLR
-</h3>
+    width:120px;
 
-<p>
-Certified Technician
-</p>
+}
 
-</div>
 
+.nav-links {
 
+    display:flex;
 
-<div>
+    gap:30px;
 
-<h3>
-EPA 608
-</h3>
+}
 
-<p>
-Universal Certified
-</p>
 
-</div>
+.nav-links a {
 
+    color:white;
 
-</div>
+    text-decoration:none;
 
+    font-weight:bold;
 
-</header>
-<section class="trust-section">
+    transition:.3s;
 
+}
 
-<h2>
-Why Choose JCH Mechanical?
-</h2>
 
+.nav-links a:hover {
 
+    color:#2da9ff;
 
-<div class="services">
+}
 
 
-<div class="card">
+.nav-call {
 
-<h3>
-🏆 3,500+ Homes Served
-</h3>
+    background:#e53935;
 
-<p>
-Thousands of homeowners have trusted us with their heating and cooling needs throughout the DFW area.
-</p>
+    color:white;
 
-</div>
+    padding:12px 22px;
 
+    border-radius:30px;
 
+    text-decoration:none;
 
+    font-weight:bold;
 
-<div class="card">
+}
 
-<h3>
-🛠 Licensed Professional
-</h3>
 
-<p>
-TDLR Certified HVAC Technician with EPA 608 Universal Certification.
-</p>
+@media(max-width:800px){
 
-</div>
+.navbar {
 
+    flex-direction:column;
 
+    gap:15px;
 
+}
 
-<div class="card">
 
-<h3>
-🤝 Honest Service
-</h3>
+.nav-links {
 
-<p>
-No pressure sales. No unnecessary replacements. Just honest recommendations and quality work.
-</p>
+    flex-wrap:wrap;
 
-</div>
+    justify-content:center;
 
+}
 
-</div>
+}
+/* Hero Section */
 
+.hero {
 
-</section>
-<section>
+min-height:700px;
 
+display:flex;
 
-<h2>
-Common HVAC Problems We Solve
-</h2>
+flex-direction:column;
 
+justify-content:center;
 
-<div class="services">
+align-items:center;
 
+text-align:center;
 
-<div class="card">
+background:
 
-<h3>
-❄ AC Not Cooling?
-</h3>
+linear-gradient(
 
-<p>
-We diagnose refrigerant issues, electrical problems, airflow issues, and more.
-</p>
+135deg,
 
-</div>
+rgba(0,45,82,.95),
 
+rgba(8,11,16,.98)
 
+);
 
-<div class="card">
+}
 
-<h3>
-🔥 No Heat?
-</h3>
 
-<p>
-We repair heating systems and restore comfort when you need it most.
-</p>
+.hero h1 {
 
-</div>
+font-size:48px;
 
+max-width:800px;
 
+}
 
-<div class="card">
 
-<h3>
-⚡ System Running Constantly?
-</h3>
+.hero p {
 
-<p>
-We find the cause and recommend the right solution.
-</p>
+max-width:700px;
 
-</div>
+}
 
 
-</div>
+.hero-stats {
 
+display:flex;
 
-</section>
-<section class="contact">
+gap:40px;
 
+margin-top:50px;
 
-<h2>
-Ready To Get Your Comfort Back?
-</h2>
+}
 
 
-<p>
-Don't wait until a small issue becomes a major repair.
-</p>
+.hero-stats div {
 
+background:#151c24;
 
-<br>
+padding:25px;
 
+border-radius:15px;
 
-<a class="button" href="tel:2142502840">
-Call JCH Mechanical
-</a>
+border:1px solid #263746;
 
+}
 
-</section>
 
+.hero-stats h3 {
 
+font-size:32px;
 
+color:#2da9ff;
 
+}
 
 
-<section>
+@media(max-width:700px){
 
-<h2>
-Our Services
-</h2>
+.hero h1 {
 
+font-size:34px;
 
-<div class="services">
+}
 
 
-<div class="card">
-<h3>❄ AC Repairs</h3>
-<p>
-Fast diagnosis and repairs to get your cooling system running again.
-</p>
-</div>
+.hero-stats {
 
+flex-direction:column;
 
-<div class="card">
-<h3>🔥 Heating Repair</h3>
-<p>
-Professional heating repairs and troubleshooting.
-</p>
-</div>
+width:90%;
 
+}
 
-<div class="card">
-<h3>🏠 System Change Outs</h3>
-<p>
-Complete HVAC replacements with quality installation.
-</p>
-</div>
+}
+/* Floating Mobile Call Button */
 
+.mobile-call {
 
-<div class="card">
-<h3>🛠 Maintenance</h3>
-<p>
-Preventative maintenance to improve efficiency and extend equipment life.
-</p>
-</div>
+position:fixed;
 
+bottom:20px;
 
-<div class="card">
-<h3>🌡 Thermostats</h3>
-<p>
-Installation and setup of modern thermostat systems.
-</p>
-</div>
+right:20px;
 
+background:#e53935;
 
-<div class="card">
-<h3>🌬 Indoor Air Quality</h3>
-<p>
-Solutions to improve comfort and air quality in your home.
-</p>
-</div>
+color:white;
 
+padding:15px 25px;
 
-</div>
+border-radius:50px;
 
-</section>
+font-weight:bold;
 
+text-decoration:none;
 
+box-shadow:0 5px 20px rgba(0,0,0,.5);
 
+z-index:2000;
 
+}
 
 
+.mobile-call:hover {
 
-</section>
+background:#ff5252;
 
-
-
-<section class="contact">
-
-<h2>
-Contact Us
-</h2>
-
-<p>
-Need HVAC service? Give us a call today.
-</p>
-
-<br>
-
-<p class="phone">
-214-250-2840
-</p>
-
-<br>
-
-<p>
-jchmechanicaldfw@gmail.com
-</p>
-
-
-</section>
-
-
-<a class="mobile-call" href="tel:2142502840">
-
-📞 Call JCH
-
-</a>
-<section class="featured-services">
-
-<h2>
-HVAC Solutions For Every Situation
-</h2>
-
-
-<div class="services">
-
-
-<div class="card">
-
-<h3>
-❄ AC Repair
-</h3>
-
-<p>
-Not cooling? Strange noises? Weak airflow? We diagnose the problem and get your system running properly.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-🔥 Heating Repair
-</h3>
-
-<p>
-Keep your home comfortable during colder months with reliable heating repairs.
-</p>
-
-</div>
-<section>
-
-
-<h2>
-Certified To Handle Your Comfort
-</h2>
-
-
-<div class="services">
-
-
-<div class="card">
-
-<h3>
-✔ TDLR Certified
-</h3>
-
-<p>
-Professional HVAC service performed by a certified technician.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-✔ EPA 608 Universal
-</h3>
-
-<p>
-Certified to properly handle refrigerants and HVAC systems.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-✔ DFW Service Area
-</h3>
-
-<p>
-Serving homeowners throughout the Dallas-Fort Worth area.
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-<section class="featured-services">
-
-<h2>
-HVAC Solutions For Every Situation
-</h2>
-
-
-<div class="services">
-
-
-<div class="card">
-
-<h3>
-❄ AC Repair
-</h3>
-
-<p>
-Not cooling? Strange noises? Weak airflow? We diagnose the problem and get your system running properly.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-🔥 Heating Repair
-</h3>
-
-<p>
-Reliable heating repairs to keep your home comfortable when you need it most.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-🏠 Full System Replacements
-</h3>
-
-<p>
-Professional HVAC change outs when repair is no longer the best option.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-🛠 Preventative Maintenance
-</h3>
-
-<p>
-Routine maintenance to improve efficiency and prevent unexpected breakdowns.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<h2>
-Certified To Handle Your Comfort
-</h2>
-
-
-<div class="services">
-
-
-<div class="card">
-
-<h3>
-✔ TDLR Certified
-</h3>
-
-<p>
-Professional HVAC service performed by a certified technician.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-✔ EPA 608 Universal
-</h3>
-
-<p>
-Certified to properly handle refrigerants and HVAC systems.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-✔ DFW Service Area
-</h3>
-
-<p>
-Serving homeowners throughout the Dallas-Fort Worth area.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-<section class="featured-services">
-
-<h2>
-HVAC Solutions For Every Situation
-</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>❄ AC Repair</h3>
-<p>
-Not cooling? Strange noises? Weak airflow? We diagnose the problem and get your system running properly.
-</p>
-</div>
-
-
-<div class="card">
-<h3>🔥 Heating Repair</h3>
-<p>
-Reliable heating repairs to keep your home comfortable.
-</p>
-</div>
-
-
-<div class="card">
-<h3>🏠 System Replacements</h3>
-<p>
-Professional HVAC change outs when replacement is the right solution.
-</p>
-</div>
-
-
-<div class="card">
-<h3>🛠 Maintenance</h3>
-<p>
-Preventative service to improve efficiency and reduce breakdowns.
-</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<h2>
-Certified To Handle Your Comfort
-</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>✔ TDLR Certified</h3>
-<p>
-Licensed HVAC service from a certified technician.
-</p>
-</div>
-
-
-<div class="card">
-<h3>✔ EPA 608 Universal</h3>
-<p>
-Certified to properly handle HVAC refrigerant systems.
-</p>
-</div>
-
-
-<div class="card">
-<h3>✔ Serving DFW</h3>
-<p>
-Reliable HVAC service throughout the Dallas-Fort Worth area.
-</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="contact">
-
-<h2>
-Ready To Get Your Comfort Back?
-</h2>
-
-<p>
-Call JCH Mechanical today.
-</p>
-
-<br>
-
-<p class="phone">
-214-250-2840
-</p>
-
-<p>
-jchmechanicaldfw@gmail.com
-</p>
-
-</section>
-
-
-
-<a class="mobile-call" href="tel:2142502840">
-📞 Call JCH
-</a>
-
-
-
-<footer>
-
-<p>
-© 2026 JCH Mechanical. All Rights Reserved.
-</p>
-
-</footer>
-
-
-</body>
-
-</html>
+}
 
 
 
