@@ -220,7 +220,7 @@ body {
 
     position: relative;
 
-    z-index: 2;
+    z-index: 5;
 
     max-width: 900px;
 
@@ -2513,4 +2513,12 @@ REDUCED MOTION
 }
 ```
 
+}
+/* FORCE HVAC ANIMATION TO SHOW */
+
+.hvac-animation {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 3 !important;
 }
